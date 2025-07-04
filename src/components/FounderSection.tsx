@@ -48,7 +48,11 @@ export const FounderSection = () => {
               Join over 1,200 people already signed up for early access. 
               Be first to experience fitness that feels like friendship.
             </p>
-            <Button variant="hero" size="xl">
+            <Button 
+              variant="hero" 
+              size="xl"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
               Get Early Access Now
             </Button>
           </div>
