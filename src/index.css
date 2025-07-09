@@ -8,9 +8,9 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Black, Yellow, Gray Palette */
-    --background: 0 0% 97%; /* Light gray */
-    --foreground: 0 0% 10%; /* Almost black */
+    /* Movolve Conversion-Optimized Palette */
+    --background: 47 12% 97%; /* Off-white #F7F7F7 */
+    --foreground: 0 0% 10%; /* Almost black #1A1A1A */
 
     --card: 0 0% 100%;
     --card-foreground: 0 0% 10%;
@@ -18,34 +18,34 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    /* Primary CTA: Yellow */
-    --primary: 54 100% 50%; /* RGB(255, 230, 0) */
-    --primary-foreground: 0 0% 0%;
+    /* Primary CTA: Orange-red for high conversions */
+    --primary: 14 100% 57%; /* #FF5722 */
+    --primary-foreground: 0 0% 100%;
 
-    /* Secondary: Black */
-    --secondary: 0 0% 10%; /* Black */
+    /* Trust accent: Vibrant blue */
+    --secondary: 224 100% 58%; /* #2962FF */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 94%;
+    --muted: 47 12% 94%;
     --muted-foreground: 0 0% 45%;
 
-    /* Accent: Gray */
-    --accent: 0 0% 50%; /* Medium gray */
-    --accent-foreground: 0 0% 100%;
+    /* Virality accent: Lime green */
+    --accent: 141 76% 58%; /* #43E97B */
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 88%;
+    --border: 47 12% 88%;
     --input: 0 0% 100%;
-    --ring: 54 100% 50%;
+    --ring: 14 100% 57%;
 
     --radius: 0.75rem;
 
-    /* Custom gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(54 90% 45%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(0 0% 60%) 100%);
+    /* Custom gradients for Movolve */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(14 88% 50%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(47 12% 98%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(141 68% 65%) 100%);
 
     /* Shadows for depth */
     --shadow-soft: 0 4px 20px -2px hsl(0 0% 0% / 0.08);
