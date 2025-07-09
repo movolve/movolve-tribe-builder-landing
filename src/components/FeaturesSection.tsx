@@ -65,7 +65,7 @@ export const FeaturesSection = () => {
               ))}
             </div>
 
-            <Button variant="cta" size="lg" className="w-full sm:w-auto">
+            <Button variant="hero" size="lg" className="w-full sm:w-auto">
               Join the Movement
             </Button>
           </div>

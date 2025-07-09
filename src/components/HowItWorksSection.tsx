@@ -1,61 +1,61 @@
-import processIcons from "@/assets/process-icons.jpg";
+import { MessageCircle, Users, MapPin } from "lucide-react";
 
 export const HowItWorksSection = () => {
   const steps = [
     {
       number: "01",
-      title: "Take the Quiz",
-      description: "Answer quick questions about your personality, fitness goals, and lifestyle preferences."
+      icon: MessageCircle,
+      title: "Take our short quiz",
+      description: "Tell us about your personality, fitness goals, and what makes you tick. Takes 2 minutes."
     },
     {
       number: "02", 
-      title: "Get Matched",
-      description: "Our AI finds people who vibe with your energy, schedule, and location."
+      icon: Users,
+      title: "Get matched into curated local experiences",
+      description: "Our algorithm finds your people and perfect-fit activities happening near you."
     },
     {
       number: "03",
-      title: "Join Your Tribe",
-      description: "Meet up for curated group activities that feel natural and fun."
+      icon: MapPin,
+      title: "Show up, move, and connect",
+      description: "No planning, no stress. Just real experiences with real people who get you."
     }
   ];
 
   return (
-    <section className="py-20 bg-gradient-card">
+    <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            How It Works
+          <h2 className="text-4xl md:text-6xl font-black mb-6 text-foreground">
+            How Movolve Works
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-medium">
             From solo to squad in three simple steps
           </p>
         </div>
 
-        {/* Process Visual */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <img 
-            src={processIcons} 
-            alt="How Movolve works - Quiz, Match, Move"
-            className="w-full h-64 object-cover rounded-2xl shadow-medium"
-          />
-        </div>
-
-        {/* Steps */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
           {steps.map((step, index) => (
             <div 
               key={index} 
-              className="text-center group hover:scale-105 transition-transform duration-300"
+              className="text-center group"
             >
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4 shadow-cta group-hover:shadow-medium transition-shadow">
-                  <span className="text-2xl font-bold text-white">{step.number}</span>
+              {/* Step Number & Icon */}
+              <div className="relative mb-8">
+                <div className="w-24 h-24 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors duration-300">
+                  <step.icon className="w-10 h-10 text-primary group-hover:text-secondary" />
                 </div>
+                <div className="absolute -top-4 -right-4 w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                  <span className="text-lg font-black text-secondary">{step.number}</span>
+                </div>
+                
+                {/* Connector Line */}
                 {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-10 left-[calc(50%+2.5rem)] w-full h-0.5 bg-gradient-to-r from-primary to-accent"></div>
+                  <div className="hidden md:block absolute top-12 left-[calc(50%+3rem)] w-full h-0.5 bg-accent"></div>
                 )}
               </div>
-              <h3 className="text-2xl font-bold mb-4">{step.title}</h3>
+
+              <h3 className="text-2xl font-bold mb-4 text-foreground">{step.title}</h3>
               <p className="text-muted-foreground text-lg leading-relaxed">
                 {step.description}
               </p>

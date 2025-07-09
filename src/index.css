@@ -8,49 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Movolve Conversion-Optimized Palette */
-    --background: 47 12% 97%; /* Off-white #F7F7F7 */
-    --foreground: 0 0% 10%; /* Almost black #1A1A1A */
+    /* Movolve SoulCycle-Inspired Palette */
+    --background: 0 0% 98%; /* Light concrete gray */
+    --foreground: 0 0% 8%; /* Bold black */
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 10%;
+    --card-foreground: 0 0% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --popover-foreground: 0 0% 8%;
 
-    /* Primary CTA: Orange-red for high conversions */
-    --primary: 14 100% 57%; /* #FF5722 */
-    --primary-foreground: 0 0% 100%;
+    /* Primary: Vibrant Yellow */
+    --primary: 48 100% 50%; /* Vibrant yellow #FFCC00 */
+    --primary-foreground: 0 0% 8%;
 
-    /* Trust accent: Vibrant blue */
-    --secondary: 224 100% 58%; /* #2962FF */
-    --secondary-foreground: 0 0% 100%;
+    /* Secondary: Bold Black */
+    --secondary: 0 0% 8%; /* Bold black */
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 47 12% 94%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 0 0% 92%; /* Concrete gray */
+    --muted-foreground: 0 0% 40%;
 
-    /* Virality accent: Lime green */
-    --accent: 141 76% 58%; /* #43E97B */
-    --accent-foreground: 0 0% 10%;
+    /* Accent: Concrete Gray */
+    --accent: 0 0% 85%; /* Modern concrete gray */
+    --accent-foreground: 0 0% 8%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 47 12% 88%;
+    --border: 0 0% 88%;
     --input: 0 0% 100%;
-    --ring: 14 100% 57%;
+    --ring: 48 100% 50%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Custom gradients for Movolve */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(14 88% 50%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(47 12% 98%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(141 68% 65%) 100%);
+    /* Movolve Custom Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 8%) 0%, hsl(0 0% 15%) 100%);
+    --gradient-yellow: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(45 100% 45%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(0 0% 96%) 100%);
 
-    /* Shadows for depth */
-    --shadow-soft: 0 4px 20px -2px hsl(0 0% 0% / 0.08);
-    --shadow-medium: 0 8px 30px -4px hsl(0 0% 0% / 0.12);
-    --shadow-cta: 0 6px 24px -2px hsl(var(--primary) / 0.25);
+    /* Urban Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(0 0% 0% / 0.1);
+    --shadow-bold: 0 8px 30px -4px hsl(0 0% 0% / 0.15);
+    --shadow-yellow: 0 6px 24px -2px hsl(var(--primary) / 0.3);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -107,6 +107,6 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-montserrat;
   }
 }
