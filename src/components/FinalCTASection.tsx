@@ -26,15 +26,30 @@ export const FinalCTASection = () => {
             <Users className="w-10 h-10 text-secondary" />
           </div>
 
+          {/* Urgency Banner */}
+          <div className="inline-flex items-center gap-2 bg-red-500/20 backdrop-blur-sm border border-red-500/30 rounded-full px-6 py-3 mb-6">
+            <div className="w-3 h-3 bg-red-400 rounded-full animate-pulse"></div>
+            <span className="text-red-300 font-bold uppercase tracking-wide">153 Early Member Spots Left</span>
+          </div>
+
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
             Take the quiz.<br />
             <span className="text-primary">Find your crew.</span>
           </h2>
           
-          <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
-            Join thousands who've already found their fitness tribe. 
+          <p className="text-xl md:text-2xl text-white/80 mb-4 max-w-2xl mx-auto font-medium leading-relaxed">
+            Join 2,847 early members who've already found their fitness tribe. 
             Your people are waiting.
           </p>
+
+          <div className="text-center mb-8">
+            <p className="text-primary text-lg font-bold">
+              ⚡ Early members save 50% for 3 months
+            </p>
+            <p className="text-white/60 text-sm">
+              Offer expires when we hit 3,000 members
+            </p>
+          </div>
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
@@ -70,7 +85,7 @@ export const FinalCTASection = () => {
           </div>
 
           {/* Trust Indicators */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-white/60 text-sm">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-white/60 text-sm">
             <div className="flex items-center justify-center gap-2">
               <div className="w-2 h-2 bg-primary rounded-full"></div>
               <span>7-day free trial</span>
@@ -79,9 +94,13 @@ export const FinalCTASection = () => {
               <div className="w-2 h-2 bg-primary rounded-full"></div>
               <span>No credit card required</span>
             </div>
-            <div className="flex items-center justify-center gap-2 col-span-2 md:col-span-1">
+            <div className="flex items-center justify-center gap-2">
               <div className="w-2 h-2 bg-primary rounded-full"></div>
               <span>Cancel anytime</span>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <div className="w-2 h-2 bg-red-400 rounded-full animate-pulse"></div>
+              <span className="text-red-300">Limited spots</span>
             </div>
           </div>
         </div>

@@ -21,20 +21,32 @@ export const SocialProofSection = () => {
   ];
 
   const stats = [
-    { number: "1,200+", label: "Early Signups" },
-    { number: "15+", label: "Activity Types" },
-    { number: "93%", label: "Match Success" },
-    { number: "4.9", label: "User Rating" }
+    { number: "2,847", label: "Early Members", urgent: true },
+    { number: "153", label: "Spots Left", urgent: true },
+    { number: "93%", label: "Match Success", urgent: false },
+    { number: "4.9★", label: "User Rating", urgent: false }
   ];
 
   return (
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
+        {/* Urgency Header */}
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/20 rounded-full px-4 py-2 mb-4">
+            <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+            <span className="text-red-600 font-bold text-sm uppercase tracking-wide">Limited Time • Early Access</span>
+          </div>
+          <h2 className="text-3xl font-bold">Join 2,847 Early Members</h2>
+          <p className="text-muted-foreground mt-2">Only 153 founding member spots left this month</p>
+        </div>
+
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+              <div className={`text-4xl md:text-5xl font-bold mb-2 ${
+                stat.urgent ? 'text-red-500' : 'text-primary'
+              }`}>
                 {stat.number}
               </div>
               <div className="text-muted-foreground font-medium">

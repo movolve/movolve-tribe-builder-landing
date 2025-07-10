@@ -26,25 +26,37 @@ export const StickyMobileCTA = () => {
   return (
     <>
       {/* Mobile Bottom Bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-accent p-4 shadow-bold md:hidden">
-        <Button 
-          variant="hero" 
-          size="lg"
-          onClick={handleClick}
-          className="w-full h-14 text-lg"
-        >
-          Start Free Trial
-        </Button>
+      <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-accent shadow-bold md:hidden">
+        <div className="px-4 py-2 bg-red-50 border-b border-red-200 text-center">
+          <p className="text-red-600 text-xs font-bold">
+            🔥 153 early member spots left • 50% off first 3 months
+          </p>
+        </div>
+        <div className="p-4">
+          <Button 
+            variant="hero" 
+            size="lg"
+            onClick={handleClick}
+            className="w-full h-14 text-lg"
+          >
+            Claim Early Access
+          </Button>
+        </div>
       </div>
 
       {/* Desktop Floating Button */}
-      <Button 
-        variant="sticky"
-        onClick={handleClick}
-        className="hidden md:flex"
-      >
-        Start Free Trial
-      </Button>
+      <div className="hidden md:block fixed bottom-4 right-4 z-50">
+        <div className="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-t-lg text-center">
+          153 spots left
+        </div>
+        <Button 
+          variant="sticky"
+          onClick={handleClick}
+          className="rounded-t-none"
+        >
+          Claim Early Access
+        </Button>
+      </div>
     </>
   );
 };

@@ -24,14 +24,32 @@ export const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        {/* Early Member Badge */}
+        <div className="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full px-6 py-2 mb-6">
+          <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+          <span className="text-primary font-bold text-sm uppercase tracking-wide">Early Member Access • Limited Spots</span>
+        </div>
+
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 leading-tight tracking-tight">
           Real connection<br />
           <span className="text-primary">starts offline.</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed font-medium">
+        <p className="text-xl md:text-2xl text-white/90 mb-4 max-w-2xl mx-auto leading-relaxed font-medium">
           Join curated fitness & social experiences matched to your vibe, your schedule, your city.
         </p>
+
+        {/* Urgency Stats */}
+        <div className="flex items-center justify-center gap-8 mb-8 text-white/80 text-sm font-medium">
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-primary rounded-full"></div>
+            <span>2,847 early members joined</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-red-400 rounded-full animate-pulse"></div>
+            <span>153 spots left this month</span>
+          </div>
+        </div>
 
         {/* Email Signup */}
         <div className="max-w-md mx-auto mb-8">
@@ -54,9 +72,14 @@ export const HeroSection = () => {
           </div>
         </div>
 
-        <p className="text-white/80 text-sm">
-          Or <button className="text-primary underline font-semibold">take our quiz</button> to get matched instantly
-        </p>
+        <div className="text-center">
+          <p className="text-white/80 text-sm mb-2">
+            Or <button className="text-primary underline font-semibold">take our quiz</button> to get matched instantly
+          </p>
+          <p className="text-white/60 text-xs">
+            ⚡ Early members get 50% off first 3 months
+          </p>
+        </div>
       </div>
 
       {/* Scroll Indicator */}
