@@ -1,11 +1,11 @@
-import { MessageCircle, Users, MapPin } from "lucide-react";
+import { MessageCircle, Users, MapPin, Heart } from "lucide-react";
 
 export const HowItWorksSection = () => {
   const steps = [
     {
       number: "01",
       icon: MessageCircle,
-      title: "Take our short quiz",
+      title: "Answer a few fun questions",
       description: "Tell us about your personality, fitness goals, and what makes you tick. Takes 2 minutes."
     },
     {
@@ -19,6 +19,12 @@ export const HowItWorksSection = () => {
       icon: MapPin,
       title: "Show up, move, and connect",
       description: "No planning, no stress. Just real experiences with real people who get you."
+    },
+    {
+      number: "04",
+      icon: Heart,
+      title: "Build lasting connections",
+      description: "Turn your workout buddies into real friends. Continue the journey together."
     }
   ];
 
@@ -34,7 +40,7 @@ export const HowItWorksSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {steps.map((step, index) => (
             <div 
               key={index} 
