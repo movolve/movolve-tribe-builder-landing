@@ -36,7 +36,7 @@ export const HeroSection = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-white/90 mb-4 max-w-2xl mx-auto leading-relaxed font-medium">
-          Join curated fitness & social experiences matched to your vibe, your schedule, your city.
+          Join fitness and social experiences matched to your vibe, schedule, and city.
         </p>
 
         {/* Urgency Stats */}
