@@ -30,7 +30,7 @@ export const HowItWorksSection = () => {
             How Movolve Works
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-medium">
-            From solo to squad in three simple steps
+            We plan the experience. You just show up.
           </p>
         </div>
 
