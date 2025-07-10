@@ -36,7 +36,7 @@ export const HeroSection = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-white/90 mb-4 max-w-2xl mx-auto leading-relaxed font-medium">
-          Reserve your spot. Move, connect, and meet 3 to 5 people you were meant to meet. Matched by our AI-powered personality algorithm.
+          Reserve your spot. Meet 3 to 5 people you were meant to meet. Matched by our AI-powered personality algorithm.
         </p>
 
         {/* Urgency Stats */}
